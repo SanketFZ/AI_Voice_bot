@@ -1,0 +1,6 @@
+2025-03-26 16:16:35 - User: hi can you hear me
+2025-03-26 16:16:40 - AI: Yes, I can hear you.
+
+2025-03-26 16:16:54 - User: ok bye
+2025-03-26 16:17:01 - AI: Okay. Thank you for your time.
+

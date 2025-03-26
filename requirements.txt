@@ -1,0 +1,9 @@
+
+google-generativeai 
+speechrecognition 
+gtts 
+elevenlabs
+openai
+pygame
+streamlit
+dotenv
