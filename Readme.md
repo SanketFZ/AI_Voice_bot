@@ -94,6 +94,32 @@ ELEVENLABS_API_KEY = ""
 
 make sure all the libraries are completely installed
 
+Instructions
+## for OpenAI
+
+https://platform.openai.com/docs/guides/text-to-speech
+
+Docs for using Openaitts
+![alt text](image-7.png)
+
+https://platform.openai.com/api-keys
+
+from this link you can generate your unique secret key
+![alt text](image-6.png)
+
+## for elevenlabs 
+
+https://elevenlabs.io/docs/api-reference/text-to-speech/convert
+
+Docs dor using elevenlabs api service
+![alt text](image-8.png)
+
+https://elevenlabs.io/app/settings/api-keys
+
+after creating  account on Elevenlabs you can create your secret key here
+and customize its access accordingly or you can give full access to the key
+![alt text](image-5.png)
+
 ## Video Demonstration
 
 [![Watch the Video](image-4.png)](https://drive.google.com/file/d/1-eFP-haHnqrbT5KzxngMcsUEaTNXCBvu/view?usp=sharing)
