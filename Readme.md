@@ -86,7 +86,9 @@ you can also change the prompt according to your usage
 make .env file and add your API keys to .env file to use the app variabels are
 
 OPEN_AI_API_KEY = ""
+
 GOOGLE_API_KEY  = ""
+
 ELEVENLABS_API_KEY = ""
 
 
