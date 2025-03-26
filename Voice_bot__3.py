@@ -23,7 +23,7 @@ try:
 except ImportError:
     st.error("Error: Google Generative AI module not found. Please install it using 'pip install google-generativeai'.")
 
-client = OpenAI(api_key=os.getenv("OPEN_AI_API_KEY"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 try:
     pygame.mixer.init()
