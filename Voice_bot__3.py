@@ -13,6 +13,8 @@ import os
 load_dotenv()
 openaitts = False
 
+
+os.environ["SDL_AUDIODRIVER"] = "dummy"
 st.set_page_config(page_title="AI Voice Assistant", layout="wide")
 
 try:
