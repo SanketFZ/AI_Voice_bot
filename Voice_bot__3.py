@@ -41,30 +41,38 @@ def speak_text(text):
 
     if openaitts:
         try:
-            response = client.audio.speech.create(
+            # This is the correct way to use OpenAI's TTS
+            response = OpenAI(api_key=os.getenv("OPEN_AI_API_KEY")).audio.speech.create(
                 model="tts-1",
                 voice="nova",
                 input=text
             )
             fname = 'output.mp3'
-            with open(fname, 'wb') as mp3file:
-                response.stream_to_file(fname)
+            response.stream_to_file(fname)
+            try:
+                pygame.mixer.music.load(fname)
+                pygame.mixer.music.play()
 
-            pygame.mixer.music.load(fname)
-            pygame.mixer.music.play()
-            while pygame.mixer.music.get_busy():
-                time.sleep(0.25)
-            pygame.mixer.music.stop()
+                while pygame.mixer.music.get_busy():
+                    time.sleep(0.25)
+
+                pygame.mixer.music.stop()
+                os.remove(fname)  # Clean up the file after playing
+
+            except KeyboardInterrupt:
+                pygame.mixer.music.stop()
+                if os.path.exists(fname):
+                    os.remove(fname)
         except Exception as e:
             st.error(f"Error in OpenAI TTS: {e}")
     else:
         try:
-            audio = client.text_to_speech.convert(
-                    text=text,
-    voice_id="JBFqnCBsd6RMkjVDRZzb",
-    model_id="eleven_multilingual_v2",
-    output_format="mp3_44100_64",
-)
+            # This is the correct way to use ElevenLabs TTS
+            audio = client.generate(
+                text=text,
+                voice="Rachel",  # Example voice, change as needed
+                model="eleven_multilingual_v2"
+            )
             play(audio)
             append_to_log(f"AI: {text}") 
         except Exception as e:
