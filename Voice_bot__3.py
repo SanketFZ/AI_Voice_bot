@@ -13,6 +13,8 @@ import os
 load_dotenv()
 openaitts = False
 
+st.set_page_config(page_title="AI Voice Assistant", layout="wide")
+
 try:
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
     model = genai.GenerativeModel('gemini-2.0-flash')
@@ -67,7 +69,7 @@ def speak_text(text):
             st.error(f"Error in ElevenLabs TTS: {e}")
 
 
-st.set_page_config(page_title="AI Voice Assistant", layout="wide")
+
 st.markdown(
     """
     <style>
