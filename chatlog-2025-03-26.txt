@@ -4,3 +4,6 @@
 2025-03-26 16:16:54 - User: ok bye
 2025-03-26 16:17:01 - AI: Okay. Thank you for your time.
 
+2025-03-26 16:27:12 - User: hello hello
+2025-03-26 16:27:15 - AI: Hello.
+
