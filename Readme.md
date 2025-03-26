@@ -94,4 +94,4 @@ make sure all the libraries are completely installed
 
 ## Video Demonstration
 
-<video controls src="Untitled video - Made with Clipchamp.mp4" title="Title"></video>
+[![Watch the Video](image-4.png)](https://drive.google.com/file/d/1-eFP-haHnqrbT5KzxngMcsUEaTNXCBvu/view?usp=sharing)
